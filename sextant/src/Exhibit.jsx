@@ -4,11 +4,15 @@ const Panel = () => {
 }
 
 const Exhibit = ({
-  data
+  children,
+  heading
 }) => {
 
   return <div className="exhibit">
-    {data?.map((e) => <Panel />)}
+    <h2 className="exhibit-heading">{heading}</h2>
+    <div className="exhibit-content">
+      {children}
+    </div>
   </div> 
 }
 
