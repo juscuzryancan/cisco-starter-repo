@@ -1,9 +1,14 @@
-const Exhibit = ({
+const Panel = () => {
+  return <div>
+  </div>
+}
 
+const Exhibit = ({
+  data
 }) => {
 
   return <div className="exhibit">
-    hello exhibit world
+    {data?.map((e) => <Panel />)}
   </div> 
 }
 
